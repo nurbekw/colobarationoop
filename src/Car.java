@@ -47,5 +47,28 @@ public class Car {
     public void setMaxSpeed(int maxSpeed) {
         this.maxSpeed = maxSpeed;
     }
-}
 
+    public void auto() {
+        String model = null;
+        if (this.marca.equals("Toyota")) {
+            model = "Land Cruiser Prado";
+            System.out.println("Result:" + "\n" + "Marca: " + marca + " Model: " + model);
+        } else if (this.marca.equals("Honda")) {
+            model = "Accord";
+            System.out.println("Result:" + "\n" + "Marca: " + marca + " Model: " + model);
+        } else if (this.marca.equals("Hyindai")) {
+            model = "Solaris";
+            System.out.println("Result:" + "\n" + "Marca: " + marca + " Model: " + model);
+        } else if (this.marca.equals("Lexus")) {
+            model = "GX 470";
+            System.out.println("Result:" + "\n" + "Marca: " + marca + " Model: " + model);
+        } else if (this.marca.equals("Nissan")) {
+            model = "Murano";
+            System.out.println("Result:" + "\n" + "Marca: " + marca + " Model: " + model);
+        } else {
+            System.out.println("try again");
+
+        }
+    }
+
+}
