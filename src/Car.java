@@ -4,7 +4,5 @@ public class Car {
     String color;
     String price;
     String maxspeed;
-//    public  (){
-//        merseds,toyota,hyundai,honda,waz.
-//    }
+
 }
