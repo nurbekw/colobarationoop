@@ -1,16 +1,9 @@
 public class Car {
-    String marca;
-    String model;
-    String color;
-    String price;
-    String maxspeed;
-
-}
-   private String marca;
-   private String model;
-   private String color;
-   private String price;
-   private String maxspeed;
+    private String marca;
+    private String model;
+    private String color;
+    private int price;
+    private int maxSpeed;
 //    public  (){
 //        merseds,toyota,hyundai,honda,waz.
 //    }
@@ -39,20 +32,20 @@ public class Car {
         this.color = color;
     }
 
-    public String getPrice() {
+    public int getPrice() {
         return price;
     }
 
-    public void setPrice(String price) {
+    public void setPrice(int price) {
         this.price = price;
     }
 
-    public String getMaxspeed() {
-        return maxspeed;
+    public int getMaxspeed() {
+        return maxSpeed;
     }
 
-    public void setMaxspeed(String maxspeed) {
-        this.maxspeed = maxspeed;
+    public void setMaxSpeed(int maxSpeed) {
+        this.maxSpeed = maxSpeed;
     }
 }
 
