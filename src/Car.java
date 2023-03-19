@@ -49,7 +49,7 @@ public class Car {
     }
 
     public void auto() {
-        String model = null;
+        this.model = null;
         if (this.marca.equals("Toyota")) {
             model = "Land Cruiser Prado";
             System.out.println("Result:" + "\n" + "Marca: " + marca + " Model: " + model);
