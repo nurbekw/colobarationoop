@@ -1,9 +1,9 @@
 public class Car {
-   private String marca;
-   private String model;
-   private String color;
-   private String price;
-   private String maxspeed;
+    private String marca;
+    private String model;
+    private String color;
+    private int price;
+    private int maxSpeed;
 //    public  (){
 //        merseds,toyota,hyundai,honda,waz.
 //    }
@@ -32,20 +32,43 @@ public class Car {
         this.color = color;
     }
 
-    public String getPrice() {
+    public int getPrice() {
         return price;
     }
 
-    public void setPrice(String price) {
+    public void setPrice(int price) {
         this.price = price;
     }
 
-    public String getMaxspeed() {
-        return maxspeed;
+    public int getMaxspeed() {
+        return maxSpeed;
     }
 
-    public void setMaxspeed(String maxspeed) {
-        this.maxspeed = maxspeed;
+    public void setMaxSpeed(int maxSpeed) {
+        this.maxSpeed = maxSpeed;
     }
+
+    public void auto() {
+        this.model = null;
+        if (this.marca.equals("Toyota")) {
+            model = "Land Cruiser Prado";
+            System.out.println("Result:" + "\n" + "Marca: " + marca + " Model: " + model);
+        } else if (this.marca.equals("Honda")) {
+            model = "Accord";
+            System.out.println("Result:" + "\n" + "Marca: " + marca + " Model: " + model);
+        } else if (this.marca.equals("Hyindai")) {
+            model = "Solaris";
+            System.out.println("Result:" + "\n" + "Marca: " + marca + " Model: " + model);
+        } else if (this.marca.equals("Lexus")) {
+            model = "GX 470";
+            System.out.println("Result:" + "\n" + "Marca: " + marca + " Model: " + model);
+        } else if (this.marca.equals("Nissan")) {
+            model = "Murano";
+            System.out.println("Result:" + "\n" + "Marca: " + marca + " Model: " + model);
+        } else {
+            System.out.println("try again");
+
+        }
+    }
+
 }
-
